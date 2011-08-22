@@ -203,8 +203,6 @@
 	 * jQuery fn
 	 * 
 	 * @param obj opt The config options
-	 * 
-	 * @return instance of gmapDirections
 	 */
     $.fn.imgExplosion = function(opt) {
         if (!this.length) {
