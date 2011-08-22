@@ -77,7 +77,18 @@
 		alternate:true
 	});
 </pre>
-	</div>
+  </div>
+	<div class="demo">
+		<img id="Burst" src="ninja.png" width="50" />
+		<p>Burst</p>
+		<button id="Image4">Fire</button>
+<pre class="brush: js">
+	$('#Shocked').imgExplosion({
+		angle:true,
+		alternate:true
+	});
+</pre>
+  </div>
 	<!-- Include jQuery >= 1.5.1: [http://paulirish.com/2010/the-protocol-relative-url/](http://paulirish.com/2010/the-protocol-relative-url/) -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<!-- non google fallback -->
@@ -136,7 +147,21 @@
 			$('#Image3').click(function(){
 				$('#Shocked').imgExplosion({
 					angle:true,
-					alternate:true
+          alternate:true
+				});
+			});
+			$('#Image4').click(function(){
+				$('#Burst').imgExplosion({
+					angle:true,
+          centerOn:this,
+          interval:2,
+          minThrow:500,
+          maxThrow:1300,
+          angle:true,
+          num:60,
+          explode: false,
+          extraWidth:200,
+          rotateSpeed:30
 				});
 			});
 			$('#InPlace').click(function(){
